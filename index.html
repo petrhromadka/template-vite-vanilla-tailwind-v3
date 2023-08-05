@@ -1,31 +1,632 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marketingová Agentura</title>
+    <meta name="description" content="Marketingová Agentura" />
+    <meta name="robots" content="max-image-preview:large" />
   </head>
-  <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
+  <body class="font-roboto font dark:bg-gray-900">
+    <!-- SCRIPTY které se musí nahrát co nejdříve -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
+    <script type="module" src="./src/animation.js"></script>
+    <!-- NAVBAR  -->
+    <nav
+      class="p-4 text-white dark:bg-gray-900 md:flex md:items-center md:justify-between"
     >
-      <div>
-        <h1
-          class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent"
+      <div class="flex items-center justify-between">
+        <a
+          href="#"
+          class="text-2xl font-bold transition-colors hover:text-blue-500"
+          >Marketingová Agentura</a
         >
-          Hello !
-        </h1>
-        <h3 class="my-4 text-2xl font-bold text-gray-500">
-          Vite + JS + tailwindcss v3
-        </h3>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"
-          >Documentation</a
-        >
+        <div class="md:hidden">
+          <!-- Upravené tlačítko hamburgeru -->
+          <button id="hamburgerBtn" class="h-8 w-8 text-blue-500">☰</button>
+        </div>
       </div>
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
-    </div>
+      <div
+        class="mt-2 flex flex-col items-start space-y-4 md:mt-0 md:flex-row md:items-center md:space-y-0 md:space-x-4"
+        id="navMenu"
+      >
+        <a href="#" class="transition-colors hover:text-blue-500">Služby</a>
+        <a href="./faq.html" class="transition-colors hover:text-blue-500"
+          >FAQ</a
+        >
+        <a href="#" class="transition-colors hover:text-blue-500">Blog</a>
+        <a href="#" class="transition-colors hover:text-blue-500">Kontakt</a>
+        <a
+          href="/kontakty"
+          class="mt-4 inline-flex items-center rounded border-0 bg-teal-400 p-1.5 px-3 text-base hover:bg-teal-600"
+        >
+          Kontaktujte nás
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="ml-1 h-4 w-4"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header
+      class="relative overflow-hidden bg-blue-600 py-48 text-center text-white"
+    >
+      <!-- Pozadí s videem -->
+      <video
+        class="absolute top-0 left-0 h-full w-full object-cover"
+        autoplay
+        muted
+        loop
+      >
+        <source src="./src/assets/Hero.mp4" type="video/mp4" />
+        Váš prohlížeč nepodporuje video tag.
+      </video>
+
+      <!-- Obsah headeru -->
+      <div class="relative z-10 mt-32">
+        <h1 class="text-6xl font-bold text-white">
+          Vaše cesta k
+          <span
+            class="bg-gradient-to-r from-indigo-700 to-pink-500 box-decoration-clone py-1.5 px-2 text-white"
+            >online úspěchu!</span
+          >
+        </h1>
+        <p class="mt-2 text-2xl decoration-4 underline-offset-[6px]">
+          Posunujeme značky na další úroveň.
+        </p>
+        <button
+          class="mt-6 transform rounded-full bg-white px-6 py-3 text-blue-600 shadow-lg transition-transform hover:scale-105"
+        >
+          Rezervujte konzultaci
+        </button>
+      </div>
+    </header>
+
+    <!-- Animace služeb -->
+    <section class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
+      <!-- Main Title -->
+      <div class="mb-12 text-center">
+        <h2
+          class="text-3xl font-bold text-white md:text-4xl lg:text-5xl lg:leading-tight"
+        >
+          Dáváme novým, osvědčeným a rostoucím značkám podobu v digitálním světě
+          a umožňujeme jim tak odhalit své plné potenciály a dosáhnout
+          nevídaného úspěchu.
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          Přejděte dolů a zjistěte více o našich službách
+        </p>
+      </div>
+
+      <!-- Mouse scroll icon -->
+      <div class="mb-16 flex justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-10 w-10 text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m-6 3.75l3 3m0 0l3-3m-3 3V1.5m6 9h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="mb-16 grid grid-cols-1 items-center gap-12 md:grid-cols-3">
+        <div
+          id="lottie-animation1"
+          class="h-80 w-full sm:max-h-full sm:max-w-full md:order-2 md:col-span-2 md:min-h-[384px] lg:h-auto lg:min-h-[512px] lg:w-auto"
+        ></div>
+        <div>
+          <h2 class="text-4xl font-bold text-white">Správa sociálních sítí</h2>
+          <p class="mt-2 text-xl text-gray-500">
+            Přizpůsobujeme vaši online přítomnost, aby co nejlépe vyjádřila vaši
+            značku a posunula ji vpřed.
+          </p>
+          <ul class="my-4 list-disc pl-5 text-xl text-gray-500">
+            <li class="list-none">Tvorba poutavých příspěvků</li>
+            <li class="mt-2 list-none">Efektivní management komentářů/zpráv</li>
+            <li class="mt-2 list-none">Zvyšování angažovanosti fanoušků</li>
+            <li class="mt-2 list-none">Přitahování nových sledujících</li>
+            <li class="mt-2 list-none">Strategie pro virální obsah</li>
+          </ul>
+          <a
+            href="#"
+            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
+            >Zjistěte více</a
+          >
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="mb-16 grid grid-cols-1 items-center gap-12 md:grid-cols-3">
+        <div
+          id="lottie-animation2"
+          class="h-96 w-full md:col-span-2 md:min-h-[384px] lg:h-auto lg:min-h-[512px] lg:w-auto"
+        ></div>
+        <div>
+          <h2 class="text-4xl font-bold text-white">
+            Kreativní a efektivní grafický design
+          </h2>
+          <p class="mt-2 text-xl text-gray-500">
+            Proměňujeme vaše myšlenky ve vizuální skvosty, které osloví a
+            zaujmou vaše publikum.
+          </p>
+          <ul class="my-4 list-disc pl-5 text-xl text-gray-500">
+            <li class="list-none">Unikátní logo, odrážející vaši značku</li>
+            <li class="mt-2 list-none">Webová grafika, která zaujme</li>
+            <li class="mt-2 list-none">Grafické návrhy pro tiskoviny</li>
+            <li class="mt-2 list-none">
+              Tvorba vizuální identity, jež vystihují váš styl
+            </li>
+            <li class="mt-2 list-none">Inovativní reklamní design</li>
+          </ul>
+          <a
+            href="#"
+            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
+            >Zjistěte více</a
+          >
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-3">
+        <div
+          id="lottie-animation3"
+          class="w-full md:order-2 md:col-span-2 md:min-h-[384px] lg:h-auto lg:min-h-[512px] lg:w-auto"
+        ></div>
+        <div class="mt-12">
+          <h2 class="text-4xl font-bold text-white">Tvorba webových stránek</h2>
+          <p class="mt-2 text-xl text-gray-500">
+            Vytváříme stránky, které vám přinesou výsledky.
+          </p>
+          <ul class="my-4 list-disc pl-5 text-xl text-gray-500">
+            <li class="list-none">Responzivní web design</li>
+            <li class="mt-2 list-none">Optimalizace pro vyhledávače (SEO)</li>
+            <li class="mt-2 list-none">Přizpůsobené UX/UI řešení</li>
+            <li class="mt-2 list-none">Integrace e-commerce</li>
+            <li class="mt-2 list-none">Správa a údržba webu</li>
+          </ul>
+          <a
+            href="#"
+            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
+            >Zjistěte více</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ANIMATED SVG -->
+    <section class="flex h-96 bg-gray-200">
+      <div class="relative flex h-full w-full overflow-hidden" id="my-wrapper">
+        <img
+          id="my-svg"
+          src="https://images.unsplash.com/photo-1539035104074-dee66086b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=2550&q=80"
+          alt="Animated Image"
+          class="absolute top-0 left-0 h-full w-full object-cover transition-transform duration-700 ease-out"
+        />
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="py-6 text-white dark:bg-gray-900 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <!-- text - start -->
+        <div class="mb-6 flex items-end justify-between md:mb-16">
+          <h2 class="mb-4 text-2xl font-bold md:mb-6 lg:text-3xl">Blog</h2>
+          <a
+            href="#"
+            class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
+            >Show more</a
+          >
+        </div>
+        <!-- text - end -->
+
+        <div
+          class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8"
+        >
+          <!-- article - start -->
+          <a
+            href="#"
+            class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+              loading="lazy"
+              alt="Photo by Minh Pham"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent md:via-transparent"
+            ></div>
+
+            <div class="relative mt-auto p-4">
+              <span class="block text-sm text-gray-200">July 19, 2021</span>
+              <h2
+                class="mb-2 text-xl font-semibold text-white transition duration-100"
+              >
+                New trends in Tech
+              </h2>
+
+              <span class="font-semibold text-indigo-300">Read more</span>
+            </div>
+          </a>
+          <!-- article - end -->
+
+          <!-- article - start -->
+          <a
+            href="#"
+            class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+              loading="lazy"
+              alt="Photo by Lorenzo Herrera"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent md:via-transparent"
+            ></div>
+
+            <div class="relative mt-auto p-4">
+              <span class="block text-sm text-gray-200">April 07, 2021</span>
+              <h2
+                class="mb-2 text-xl font-semibold text-white transition duration-100"
+              >
+                Working with legacy stacks
+              </h2>
+
+              <span class="font-semibold text-indigo-300">Read more</span>
+            </div>
+          </a>
+          <!-- article - end -->
+
+          <!-- article - start -->
+          <a
+            href="#"
+            class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600"
+              loading="lazy"
+              alt="Photo by Magicle"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent md:via-transparent"
+            ></div>
+
+            <div class="relative mt-auto p-4">
+              <span class="block text-sm text-gray-200">March 15, 2021</span>
+              <h2
+                class="mb-2 text-xl font-semibold text-white transition duration-100"
+              >
+                10 best smartphones for devs
+              </h2>
+
+              <span class="font-semibold text-indigo-300">Read more</span>
+            </div>
+          </a>
+          <!-- article - end -->
+
+          <!-- article - start -->
+          <a
+            href="#"
+            class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600"
+              loading="lazy"
+              alt="Photo by Martin Sanchez"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent md:via-transparent"
+            ></div>
+
+            <div class="relative mt-auto p-4">
+              <span class="block text-sm text-gray-200">January 27, 2021</span>
+              <h2
+                class="mb-2 text-xl font-semibold text-white transition duration-100"
+              >
+                8 High performance Notebooks
+              </h2>
+
+              <span class="font-semibold text-indigo-300">Read more</span>
+            </div>
+          </a>
+          <!-- article - end -->
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL -->
+    <section class="py-6 dark:bg-gray-900 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <h2
+          class="mb-8 text-center text-2xl font-bold text-white md:mb-12 lg:text-3xl"
+        >
+          Co o nás říkají zákazníci
+        </h2>
+
+        <div class="grid gap-4 md:grid-cols-2 md:gap-8">
+          <!-- quote - start -->
+          <div
+            class="flex flex-col items-center gap-4 rounded-lg bg-indigo-500 px-8 py-6 md:gap-6"
+          >
+            <div class="max-w-md text-center text-white lg:text-lg">
+              “This is a section of some simple filler text, also known as
+              placeholder text.”
+            </div>
+
+            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+              <div
+                class="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+                  loading="lazy"
+                  alt="Photo by Radu Florin"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div>
+                <div
+                  class="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base"
+                >
+                  John McCulling
+                </div>
+                <p
+                  class="text-center text-sm text-indigo-200 sm:text-left md:text-sm"
+                >
+                  CEO / Datadrift
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- quote - end -->
+
+          <!-- quote - start -->
+          <div
+            class="flex flex-col items-center gap-4 rounded-lg bg-indigo-500 px-8 py-6 md:gap-6"
+          >
+            <div class="max-w-md text-center text-white lg:text-lg">
+              “This is a section of some simple filler text, also known as
+              placeholder text.”
+            </div>
+
+            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+              <div
+                class="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
+                  loading="lazy"
+                  alt="Photo by christian ferrer"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+
+              <div>
+                <div
+                  class="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base"
+                >
+                  Kate Berg
+                </div>
+                <p
+                  class="text-center text-sm text-indigo-200 sm:text-left md:text-sm"
+                >
+                  CFO / Dashdash
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- quote - end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tým -->
+    <section
+      class="container mx-auto mt-20 gap-10 text-white md:grid md:grid-cols-2 lg:grid-cols-2"
+    >
+      <h2 class="col-span-full mb-10 text-center text-3xl font-bold">
+        Náš Tým
+      </h2>
+      <!-- Člen 1 -->
+      <div class="mx-auto text-center md:col-span-1 lg:col-span-1">
+        <img
+          src="path_to_member1.jpg"
+          alt="Obrázek člena týmu 1"
+          class="mx-auto mb-5 h-48 w-48 rounded-full bg-white shadow"
+        />
+        <h3 class="text-2xl font-bold">Jméno Člena 1</h3>
+        <p>Popis role a schopností člena 1.</p>
+      </div>
+      <!-- Člen 2 -->
+      <div class="mx-auto text-center md:col-span-1 lg:col-span-1">
+        <img
+          src="path_to_member2.jpg"
+          alt="Obrázek člena týmu 2"
+          class="mx-auto mb-5 h-48 w-48 rounded-full bg-white shadow"
+        />
+        <h3 class="text-2xl font-bold">Jméno Člena 2</h3>
+        <p>Popis role a schopností člena 2.</p>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="text-white dark:bg-gray-900 sm:py-8 lg:py-12">
+      <div class="py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div
+            class="flex flex-col overflow-hidden rounded-lg bg-indigo-500 sm:flex-row md:h-80"
+          >
+            <!-- image - start -->
+            <div
+              class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5"
+            >
+              <img
+                src="https://images.pexels.com/photos/3837464/pexels-photo-3837464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                loading="lazy"
+                alt="Photo by Andras Vas"
+                class="h-full w-full object-cover object-center"
+              />
+            </div>
+            <!-- image - end -->
+
+            <!-- content - start -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+              <h2
+                class="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl"
+              >
+                Rezervujte si konzultaci
+              </h2>
+
+              <p class="mb-8 max-w-md text-gray-700">
+                Objevte, jak vaše online přítomnost může dosáhnout nových výšek
+                s naší personalizovanou pomocí. Ať už potřebujete nový web,
+                zlepšení SEO, nebo efektivnější využití sociálních sítí, jsme
+                tady pro vás. Diskutujte o svých cílech a výzvách při skleničce
+                kávy s námi.
+              </p>
+
+              <div class="mt-auto">
+                <a
+                  href="#"
+                  class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
+                  >Pojďte s námi na kafe</a
+                >
+              </div>
+            </div>
+            <!-- content - end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="body-font text-white">
+      <div
+        class="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row"
+      >
+        <a
+          class="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">Marketingovka</span>
+        </a>
+        <p
+          class="mt-4 text-sm text-white sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4"
+        >
+          © 2023 Marketingovka —
+          <a
+            href="https://www.linkedin.com/in/petr-hrom%C3%A1dka-49b4a91a5/"
+            class="ml-1 text-white decoration-pink-500 decoration-2 underline-offset-2 hover:underline"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Petr Hromádka</a
+          >
+        </p>
+        <span
+          class="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start"
+        >
+          <a class="cursor-pointer text-gray-500 hover:text-blue-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 cursor-pointer text-gray-500 hover:text-blue-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 cursor-pointer text-gray-500 hover:text-blue-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 cursor-pointer text-gray-500 hover:text-blue-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/photo.js"></script>
   </body>
 </html>
