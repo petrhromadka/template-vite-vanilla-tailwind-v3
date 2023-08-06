@@ -1,27 +1,17 @@
 import "./index.css";
 
-// Navigace "hamburger" menu pro mobilní zařízení
 document.addEventListener("DOMContentLoaded", function () {
-  const navMenu = document.getElementById("navMenu");
   const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const burgerMenu = document.getElementById("burgerMenu");
+  const closeBtn = document.getElementById("closeBtn");
 
+  // Kliknutí na tlačítko otevře/zavře burgermenu
   hamburgerBtn.addEventListener("click", function () {
-    if (navMenu.classList.contains("hidden")) {
-      gsap.to(navMenu, {
-        autoAlpha: 1,
-        duration: 0.3,
-        onStart: function () {
-          navMenu.classList.remove("hidden");
-        },
-      });
-    } else {
-      gsap.to(navMenu, {
-        autoAlpha: 0,
-        duration: 0.3,
-        onComplete: function () {
-          navMenu.classList.add("hidden");
-        },
-      });
-    }
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Kliknutí na tlačítko "Zavřít" skryje burgermenu
+  closeBtn.addEventListener("click", function () {
+    burgerMenu.classList.add("hidden");
   });
 });

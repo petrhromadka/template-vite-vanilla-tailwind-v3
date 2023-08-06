@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Přidáme nové styly pro burgermenu v režimu "overlay" */
+#burgerMenu {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+/* Po odstranění třídy "hidden" zobrazení burgermenu */
+#burgerMenu:not(.hidden) {
+  opacity: 1;
+}
