@@ -27,7 +27,17 @@
             aria-label="logo"
           >
             <img src="./src/assets/logo.svg" alt="logo" class="h-[7rem]" />
-            Socionet
+            <span
+              data-text="Awesome"
+              class="unique-button ml-[-1rem] flex items-center"
+            >
+              <span class="unique-actual-text mt-1 text-indigo-500"
+                >&nbsp;socionet&nbsp;</span
+              >
+              <span class="unique-hover-text mt-1" aria-hidden="true"
+                >&nbsp;socionet&nbsp;</span
+              >
+            </span>
           </a>
           <!-- logo - end -->
 
@@ -57,11 +67,7 @@
           <!-- nav - end -->
 
           <!-- buttons - start -->
-          <a
-            href="#"
-            class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-indigo-500 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-            >Kontaktujte nás</a
-          >
+          <a href="#" class="unique-comic-button">Kontaktujte nás</a>
 
           <button
             type="button"
@@ -108,7 +114,7 @@
           <!-- text start -->
           <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
             <h1
-              class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl"
+              class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-8 md:text-6xl"
             >
               <span
                 class="bg-gradient-to-r from-white to-indigo-500 box-decoration-clone bg-clip-text py-1.5 px-2 text-transparent"
@@ -119,17 +125,9 @@
             <div
               class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center"
             >
-              <a
-                href="#"
-                class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
-                >Rezervujte konzultaci</a
-              >
+              <a href="#" class="unique-comic-button">Rezervujte konzultaci</a>
 
-              <a
-                href="#"
-                class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-                >Více informací</a
-              >
+              <a href="#" class="unique-comic-button-gray">Více informací</a>
             </div>
           </div>
 
@@ -138,7 +136,7 @@
         <!-- burgermenu - start -->
         <div
           id="burgerMenu"
-          class="fixed inset-0 z-10 hidden bg-white p-4 md:hidden"
+          class="fixed inset-0 z-50 hidden bg-white p-4 md:hidden"
         >
           <div class="flex justify-end">
             <button
@@ -151,7 +149,7 @@
             </button>
           </div>
           <div
-            class="flex h-full flex-col items-center justify-center gap-4 text-2xl font-bold"
+            class="top-5 flex h-full flex-col items-center gap-4 text-2xl font-bold"
           >
             <a href="/">
               <img src="./src/assets/logo.svg" alt="logo" class="h-[16rem]"
@@ -165,12 +163,8 @@
             <a href="#" class="block py-2 text-gray-600 hover:text-indigo-500"
               >Blog</a
             >
-            <a
-              href="#"
-              class="mb-[10rem] block py-2 text-gray-600 hover:text-indigo-500"
-              >Kontakt</a
-            >
-            <div class="absolute bottom-5 flex justify-center gap-4">
+            <a href="#" class="unique-comic-button">Kontaktujte nás</a>
+            <div class="absolute bottom-5 flex justify-center gap-8">
               <a href="#" class="text-gray-500 hover:text-indigo-500">
                 <i class="fab fa-instagram text-4xl"></i>
               </a>
@@ -194,24 +188,23 @@
         <h2
           class="text-3xl font-bold text-gray-700 md:text-4xl lg:text-5xl lg:leading-tight"
         >
-          Dáváme novým, osvědčeným a rostoucím značkám podobu v digitálním světě
-          a umožňujeme jim tak odhalit své plné potenciály a dosáhnout
-          nevídaného úspěchu.
+          Oživte svou značku v digitálním vesmíru. Společně objevíme vaše skryté
+          možnosti a nastavíme cestu k úspěchu, o kterém jste dosud jen snili.
         </h2>
-        <p class="mt-8 text-sm text-gray-500">
+        <h3 class="mt-8 text-sm text-gray-500">
           Přejděte dolů a zjistěte více o našich službách.
-        </p>
+        </h3>
       </div>
 
       <!-- Mouse scroll icon -->
-      <div class="mb-16 flex justify-center">
+      <div class="mb-12 flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="h-12 w-12 text-indigo-500"
+          class="mt-8 h-12 w-12 text-indigo-500"
         >
           <path
             stroke-linecap="round"
@@ -227,10 +220,12 @@
       >
         <div
           id="lottie-animation1"
-          class="mb-12 h-auto w-full md:order-2 md:col-span-2 md:min-h-[384px] lg:min-h-[512px]"
+          class="h-auto w-full sm:mt-10 md:order-2 md:col-span-2 md:min-h-[384px] lg:min-h-[512px]"
         ></div>
         <div>
-          <h2 class="text-2xl font-bold text-gray-700 md:text-3xl lg:text-4xl">
+          <h2
+            class="mt-4 text-2xl font-bold text-gray-700 sm:mt-10 lg:text-4xl"
+          >
             Správa sociálních sítí
           </h2>
           <p class="mt-2 text-lg text-gray-500 md:text-xl">
@@ -246,23 +241,36 @@
           </ul>
           <a
             href="#"
-            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
-            >Zjistěte více</a
-          >
+            class="absolute z-10 flex text-lg text-blue-500 hover:text-blue-600"
+            >Zjistěte více<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
         </div>
       </div>
 
       <!-- <img src="./src/assets/astro1.svg" alt="" class="mr-auto ml-[7rem]" /> -->
       <!-- Card 2 -->
       <div
-        class="mb-16 mt-[-8rem] grid grid-cols-1 items-center gap-12 md:grid-cols-3"
+        class="mb-16 mt-[-4rem] grid grid-cols-1 items-center gap-12 sm:mt-2 md:grid-cols-3"
       >
         <div
           id="lottie-animation2"
           class="h-96 w-full md:col-span-2 md:min-h-[384px] lg:h-auto lg:min-h-[512px] lg:w-auto"
         ></div>
         <div>
-          <h2 class="text-4xl font-bold text-gray-700">
+          <h2 class="text-2xl font-bold text-gray-700 lg:text-4xl">
             Kreativní a efektivní grafický design
           </h2>
           <p class="mt-2 text-xl text-gray-500">
@@ -278,24 +286,35 @@
             </li>
             <li class="mt-2 list-none">Inovativní reklamní design</li>
           </ul>
-          <a
-            href="#"
-            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
-            >Zjistěte více</a
-          >
+          <a href="#" class="flex text-lg text-blue-500 hover:text-blue-600"
+            >Zjistěte více<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
         </div>
       </div>
 
       <!-- Card 3 -->
       <div
-        class="mt-[-8rem] grid grid-cols-1 items-center gap-12 p-4 md:grid-cols-3"
+        class="mt-[-4rem] grid grid-cols-1 items-center gap-12 p-4 md:grid-cols-3"
       >
         <div
           id="lottie-animation3"
           class="w-full md:order-2 md:col-span-2 md:min-h-[384px] lg:h-auto lg:min-h-[512px] lg:w-auto"
         ></div>
         <div class="mt-12">
-          <h2 class="text-4xl font-bold text-gray-700">
+          <h2 class="text-2xl font-bold text-gray-700 lg:text-4xl">
             Tvorba webových stránek
           </h2>
           <p class="mt-2 text-xl text-gray-500">
@@ -308,11 +327,22 @@
             <li class="mt-2 list-none">Integrace e-commerce</li>
             <li class="mt-2 list-none">Správa a údržba webu</li>
           </ul>
-          <a
-            href="#"
-            class="text-lg text-blue-500 after:content-['_↗'] hover:text-blue-600"
-            >Zjistěte více</a
-          >
+          <a href="#" class="flex text-lg text-blue-500 hover:text-blue-600"
+            >Zjistěte více<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -326,16 +356,19 @@
           <h2
             class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
           >
-            Our competitive advantage
+            Naše klíčové kompetence
           </h2>
 
-          <p
+          <h3
             class="mx-auto mb-20 max-w-screen-md text-center text-gray-500 md:text-lg"
           >
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated.
-          </p>
+            Jako přední digitální agentura se specializujeme na správu
+            sociálních sítí, kde vám pomáháme maximalizovat dosah a interakci s
+            vašimi zákazníky. Kromě toho nabízíme moderní webové řešení a
+            jedinečný grafický design. A aby vaše online prezentace byla
+            kompletní, poskytujeme také profesionální copywriting, který vašemu
+            obsahu dodá správný tón a poselství.
+          </h3>
         </div>
         <!-- text - end -->
 
@@ -364,15 +397,18 @@
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Growth</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Strategie sociálních médií
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Plánování a implementace strategií pro maximalizaci dosahu a
+                interakce.<br />
+                Analýza a optimalizace vaší online přítomnosti.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -385,30 +421,33 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
+                stroke-width="1.5"
                 stroke="currentColor"
+                class="h-6 w-6"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
                 />
               </svg>
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Security</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Moderní webové řešení
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Vývoj webových stránek s důrazem na UX/UI design.<br />
+                Vytváříme weby které nejen dobře vypadají, ale také dáváme důraz
+                na funkcionalitu.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -421,30 +460,32 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
+                stroke-width="1.5"
                 stroke="currentColor"
+                class="h-6 w-6"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                 />
               </svg>
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Cloud</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Vizuální storytelling
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Grafické návrhy, které vyprávějí příběh vaší značky.<br />
+                Kreativní vizuály pro sociální média, reklamy a tiskoviny.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -472,15 +513,19 @@
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Speed</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Rychlost dodání
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Efektivní workflow zajišťující rychlé a včasné dodání
+                projektů.<br />
+                Nepřetržitá komunikace s klientem pro hladký průběh a dodržení
+                termínů.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -508,15 +553,17 @@
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Support</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Podpora 24<span class="tracking-wider">/7</span>
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Rychlá a efektivní podpora pro všechny naše služby.<br />
+                Pravidelné konzultace a aktualizace vašich projektů.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -529,30 +576,32 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
+                stroke-width="1.5"
                 stroke="currentColor"
+                class="h-6 w-6"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
                 />
               </svg>
             </div>
 
             <div>
-              <h3 class="mb-2 text-lg font-semibold md:text-xl">Dark Mode</h3>
+              <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                Měření a analýza
+              </h3>
               <p class="mb-2 text-gray-500">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
+                Sledování a vyhodnocování výkonu vašich online aktivit.<br />
+                Poskytování hlubokých analýz a doporučení pro zlepšení.
               </p>
               <a
                 href="#"
                 class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-                >More</a
+                >Více</a
               >
             </div>
           </div>
@@ -575,33 +624,28 @@
 
       <div class="absolute inset-0 flex flex-col items-center justify-center">
         <h1
-          class="mb-2 mt-32 text-center text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl lg:text-4xl"
+          class="mt-32 text-center text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl lg:text-4xl"
         >
-          S námi transformujete svůj web, sociální sítě a grafický design na
-          novou úroveň.
+          Přeměňte svou značku v digitálního lídra.
         </h1>
-        <a
-          class="transform rounded-lg bg-white px-4 py-4 text-xl text-indigo-500 shadow-md transition-all hover:scale-105 hover:bg-gray-200 hover:text-indigo-700"
-          href="/"
+        <h3
+          class="mb-4 font-bold text-white sm:text-3xl md:text-4xl lg:text-4xl"
         >
-          Kontaktujte nás
-        </a>
+          S námi to jde.
+        </h3>
+        <a class="unique-comic-button" href="/"> Dejte nám vědět </a>
       </div>
     </section>
 
     <!-- FOTKA ENDS -->
 
     <!-- BLOG -->
-    <section class="py-6 text-gray-500 sm:py-8 lg:py-12">
+    <section class="py-6 text-gray-800 sm:py-8 lg:py-12">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <!-- text - start -->
         <div class="mb-6 flex items-end justify-between md:mb-16">
           <h2 class="mt-4 text-2xl font-bold lg:text-3xl">Blog</h2>
-          <a
-            href="#"
-            class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
-            >Ukaž více</a
-          >
+          <a href="#" class="unique-comic-button-gray">Ukaž více</a>
         </div>
         <!-- text - end -->
 
@@ -726,470 +770,234 @@
         </div>
       </div>
     </section>
-    <!-- TESTIMONIAL -->
-    <section class="py-6 sm:py-8 lg:py-12">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
-        <h2
-          class="mb-8 text-center text-2xl font-bold text-gray-700 md:mb-12 lg:text-3xl"
+
+    <!-- newsletter - start -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div
+          class="flex flex-col items-center rounded-lg bg-gray-100 p-4 sm:p-8"
         >
-          Co o nás říkají zákazníci
-        </h2>
-
-        <div class="grid gap-4 md:grid-cols-2 md:gap-8">
-          <!-- quote - start -->
-          <div
-            class="flex flex-col items-center gap-4 rounded-lg bg-indigo-500 px-8 py-6 md:gap-6"
-          >
-            <div class="max-w-md text-center text-white lg:text-lg">
-              “This is a section of some simple filler text, also known as
-              placeholder text.”
-            </div>
-
-            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-              <div
-                class="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
-                  loading="lazy"
-                  alt="Photo by Radu Florin"
-                  class="h-full w-full object-cover object-center"
-                />
-              </div>
-
-              <div>
-                <div
-                  class="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base"
-                >
-                  John McCulling
-                </div>
-                <p
-                  class="text-center text-sm text-indigo-200 sm:text-left md:text-sm"
-                >
-                  CEO / Datadrift
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- quote - end -->
-
-          <!-- quote - start -->
-          <div
-            class="flex flex-col items-center gap-4 rounded-lg bg-indigo-500 px-8 py-6 md:gap-6"
-          >
-            <div class="max-w-md text-center text-white lg:text-lg">
-              “This is a section of some simple filler text, also known as
-              placeholder text.”
-            </div>
-
-            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-              <div
-                class="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
-                  loading="lazy"
-                  alt="Photo by christian ferrer"
-                  class="h-full w-full object-cover object-center"
-                />
-              </div>
-
-              <div>
-                <div
-                  class="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base"
-                >
-                  Kate Berg
-                </div>
-                <p
-                  class="text-center text-sm text-indigo-200 sm:text-left md:text-sm"
-                >
-                  CFO / Dashdash
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- quote - end -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section class="text-white sm:py-8 lg:py-12">
-      <div class="py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div
-            class="flex flex-col overflow-hidden rounded-lg bg-indigo-500 sm:flex-row md:h-80"
-          >
-            <!-- image - start -->
-            <div
-              class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5"
+          <div class="mb-4 sm:mb-8">
+            <h2
+              class="text-center text-xl font-bold text-indigo-500 sm:text-2xl lg:text-3xl"
             >
-              <img
-                src="https://images.pexels.com/photos/3837464/pexels-photo-3837464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                loading="lazy"
-                alt="Photo by Andras Vas"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-            <!-- image - end -->
-
-            <!-- content - start -->
-            <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-              <h2
-                class="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl"
-              >
-                Rezervujte si konzultaci
-              </h2>
-
-              <p class="mb-8 max-w-md text-gray-700">
-                Objevte, jak vaše online přítomnost může dosáhnout nových výšek
-                s naší personalizovanou pomocí. Ať už potřebujete nový web,
-                zlepšení SEO, nebo efektivnější využití sociálních sítí, jsme
-                tady pro vás. Diskutujte o svých cílech a výzvách při skleničce
-                kávy s námi.
-              </p>
-
-              <div class="mt-auto">
-                <a
-                  href="#"
-                  class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
-                  >Pojďte s námi na kafe</a
-                >
-              </div>
-            </div>
-            <!-- content - end -->
+              S námi jste vždy o krok napřed v online trendech.
+            </h2>
+            <p class="text-center text-gray-500">
+              Staňte se součástí naší komunity a získejte pravidelné
+              aktualizace.
+            </p>
           </div>
+
+          <form class="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
+            <input
+              placeholder="Email"
+              class="bg-gray-white w-full flex-1 rounded border border-gray-300 px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-indigo-300 transition duration-100 focus:ring"
+            />
+
+            <button
+              class="inline-block rounded bg-indigo-500 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
+            >
+              Send
+            </button>
+          </form>
+
+          <p class="text-center text-xs text-gray-400">
+            Přihlášením k odběru našeho newsletteru souhlasíte s našimi
+            <a
+              href="#"
+              class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              >Podmínky služby</a
+            >
+            and
+            <a
+              href="#"
+              class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              >Ochrana osobních údajů</a
+            >.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- newsletter - end -->
     <!-- Footer -->
-    <footer class="bg-white">
-      <div class="bg-indigo-500 py-6">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div
-            class="flex flex-col items-center justify-between gap-2 md:flex-row"
-          >
-            <div class="mb-3 text-center md:mb-0 md:text-left">
-              <span class="font-bold uppercase tracking-widest text-gray-100"
-                >Newsletter</span
+    <div class="bg-gray-900">
+      <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div
+          class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+        >
+          <div class="col-span-full lg:col-span-2">
+            <!-- logo - start -->
+            <div class="mb-2 lg:-mt-2">
+              <a
+                href="/"
+                class="inline-flex items-center gap-2 text-xl font-bold text-gray-100 md:text-2xl"
+                aria-label="logo"
               >
-              <p class="text-indigo-200">Subscribe to our newsletter</p>
+                <img
+                  src="./src/assets/astro1.svg"
+                  alt="hello"
+                  class="h-[7rem]"
+                />
+              </a>
+            </div>
+            <!-- logo - end -->
+
+            <p class="mb-4 text-gray-400 sm:pr-8">
+              Socionet - Vaše cesta k digitální excelenci.
+            </p>
+
+            <!-- social - start -->
+            <div class="mb-8 flex gap-4">
+              <a href="#" class="text-gray-500 hover:text-indigo-500">
+                <i class="fab fa-instagram text-4xl"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-indigo-500">
+                <i class="fab fa-facebook text-4xl"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-indigo-500">
+                <i class="fab fa-tiktok text-4xl"></i>
+              </a>
+            </div>
+            <!-- social - end -->
+          </div>
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">
+              Služby
             </div>
 
-            <form class="flex w-full gap-2 md:max-w-md">
-              <input
-                placeholder="Email"
-                class="w-full flex-1 rounded border border-white bg-indigo-400 px-3 py-2 text-white placeholder-indigo-100 outline-none ring-indigo-300 transition duration-100 focus:ring"
-              />
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Správa sociálních sití</a
+                >
+              </div>
 
-              <button
-                class="inline-block rounded bg-white px-8 py-2 text-center text-sm font-semibold text-indigo-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:text-indigo-600 md:text-base"
-              >
-                Send
-              </button>
-            </form>
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Web Development</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Grafický design
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Copywriting</a
+                >
+              </div>
+            </nav>
           </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">
+              Agentura
+            </div>
+
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >About</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Blog</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">
+              Support
+            </div>
+
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Contact</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Chat</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >FAQ</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">
+              Legal
+            </div>
+
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Podmínky služby</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                  >Ochrana osobních údajů</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
         </div>
-      </div>
 
-      <div class="pt-12 lg:pt-16">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div
-            class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8"
-          >
-            <div class="col-span-full lg:col-span-2">
-              <!-- logo - start -->
-              <div class="mb-4 lg:-mt-2">
-                <a
-                  href="/"
-                  class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
-                  aria-label="logo"
-                >
-                  <svg
-                    width="95"
-                    height="94"
-                    viewBox="0 0 95 94"
-                    class="h-auto w-5 text-indigo-500"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                  </svg>
-
-                  Flowrift
-                </a>
-              </div>
-              <!-- logo - end -->
-
-              <p class="mb-6 text-gray-500 sm:pr-8">
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text
-              </p>
-
-              <!-- social - start -->
-              <div class="flex gap-4">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  target="_blank"
-                  class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                    />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  target="_blank"
-                  class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-
-                <a
-                  href="#"
-                  target="_blank"
-                  class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <!-- social - end -->
-            </div>
-
-            <!-- nav - start -->
-            <div>
-              <div
-                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
-              >
-                Products
-              </div>
-
-              <nav class="flex flex-col gap-4">
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Overview</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Solutions</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Pricing</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Customers</a
-                  >
-                </div>
-              </nav>
-            </div>
-            <!-- nav - end -->
-
-            <!-- nav - start -->
-            <div>
-              <div
-                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
-              >
-                Company
-              </div>
-
-              <nav class="flex flex-col gap-4">
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >About</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Investor Relations</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Jobs</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Press</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Blog</a
-                  >
-                </div>
-              </nav>
-            </div>
-            <!-- nav - end -->
-
-            <!-- nav - start -->
-            <div>
-              <div
-                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
-              >
-                Support
-              </div>
-
-              <nav class="flex flex-col gap-4">
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Contact</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Documentation</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Chat</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >FAQ</a
-                  >
-                </div>
-              </nav>
-            </div>
-            <!-- nav - end -->
-
-            <!-- nav - start -->
-            <div>
-              <div
-                class="mb-4 font-bold uppercase tracking-widest text-gray-800"
-              >
-                Legal
-              </div>
-
-              <nav class="flex flex-col gap-4">
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Terms of Service</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Privacy Policy</a
-                  >
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                    >Cookie settings</a
-                  >
-                </div>
-              </nav>
-            </div>
-            <!-- nav - end -->
-          </div>
-
-          <div class="border-t py-8 text-center text-sm text-gray-400">
-            © 2021 - Present Flowrift. All rights reserved.
-          </div>
+        <div
+          class="border-t border-gray-800 py-8 text-center text-sm text-gray-400"
+        >
+          © 2021 - Present Flowrift. All rights reserved.
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/photo.js"></script>

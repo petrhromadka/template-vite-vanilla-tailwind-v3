@@ -1,3 +1,127 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --text-color: #6366f1;
+}
+
+/*   LOGO STARTS  */
+.unique-button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #6366f1; /* indigo-500 color */
+  height: auto;
+  background: transparent;
+  padding: 0;
+  letter-spacing: 1px;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.unique-hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+.unique-button:hover .unique-hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+@media (max-width: 650px) {
+  .unique-button {
+    font-size: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .header-img {
+    margin-left: -1rem;
+  }
+}
+
+/*   LOGO ENDS   */
+
+/*   COMIC BUTTON STARTS   */
+.unique-comic-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--text-color);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+.unique-comic-button:hover {
+  background-color: #fff;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  box-shadow: 5px 5px 0px var(--text-color);
+}
+
+.unique-comic-button:active {
+  background-color: var(--text-color);
+  box-shadow: none;
+  transform: translateY(4px);
+}
+@media (max-width: 1023px) {
+  header .unique-comic-button {
+    display: none;
+  }
+}
+/*   COMIC BUTTON ENDS   */
+/*   GRAY BUTTON STARTS   */
+
+.unique-comic-button-gray {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #808080; /* šedá barva */
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+.unique-comic-button-gray:hover {
+  background-color: #fff;
+  color: #808080; /* šedá barva při najetí myší */
+  border: 2px solid #808080;
+  box-shadow: 5px 5px 0px #808080;
+}
+
+.unique-comic-button-gray:active {
+  background-color: #808080; /* šedá barva při stisknutí */
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/*   GRAY BUTTON ENDS   */
